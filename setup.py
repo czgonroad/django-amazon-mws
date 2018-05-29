@@ -64,5 +64,12 @@ setup(
     # dependencies). You can install these using the following syntax,
     # for example:
     # $ pip install -e .[dev,test]
-    extras_require={},
+    extras_require={
+        'dev': [
+            'flake8',
+            'sphinx',
+            'sphinx_rtd_theme',
+            'sphinx-autobuild',
+        ]
+    },
 )
