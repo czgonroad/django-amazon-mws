@@ -10,6 +10,5 @@ Welcome to django-amazon-mws's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   usage/quickstart.rst
-   usage/models.rst
-   usage/admin.rst
+   models.rst
+   admin.rst
