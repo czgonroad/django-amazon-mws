@@ -1,2 +1,3 @@
 django_amazon_mws.egg-info/
 docs/_build/
+dist/
