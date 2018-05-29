@@ -1,0 +1,14 @@
+dist: trusty
+sudo: false
+language: python
+python:
+  - '3.4'
+  - '3.5'
+  - '3.6'
+cache: pip
+before_install:
+  - pip install -e .
+install:
+  - pip install flake8
+script:
+  - flake8
