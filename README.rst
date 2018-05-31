@@ -1,7 +1,20 @@
 django-amazon-mws
 =================
+.. image:: https://travis-ci.org/python-amazon-mws/django-amazon-mws.svg?branch=master
 
 Django integration with Amazon MWS.
+
+Supported Django versions:
+
+- Django 1.11
+- Django 2.0
+
+Supported Python versions:
+
+- Python 2.7
+- Python 3.4
+- Python 3.5
+- Python 3.6
 
 Getting started
 ===============
@@ -26,6 +39,6 @@ Clone this repo, make a virtual environment then install the package + dev and d
 
 ``$ pip install -e .[dev, docs]``
 
-From within the `docs/` directory, you can run the following to get a live reloading server serving the HTML documentation at `http://127.0.0.1:8000`.
+From within the ``docs/`` directory, you can run the following to get a live reloading server serving the HTML documentation at ``http://127.0.0.1:8000``.
 
 ``$ sphinx-autobuild . _build/html/``
