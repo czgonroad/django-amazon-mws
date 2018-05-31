@@ -15,6 +15,9 @@ class Region(models.Model):
     code = models.CharField(unique=True, max_length=2)
     endpoint = models.URLField()
 
+    def natural_key(self):
+        return (self.code, )
+
     def __str__(self):
         return self.code
 
@@ -31,6 +34,9 @@ class Marketplace(models.Model):
                                  verbose_name='Amazon ID')
     region = models.ForeignKey(Region, models.PROTECT)
     code = models.CharField(max_length=2)
+
+    def natural_key(self):
+        return (self.amazon_id, )
 
     def __str__(self):
         return self.code
