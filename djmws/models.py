@@ -51,19 +51,14 @@ class MWSCredentials(models.Model):
             ('user', 'region', )
         )
 
-    def _as_dictionary(self):
-        return {
-            'access_key': self.access_key,
-            'secret_key': self.secret_key,
-            'account_id': self.seller_id
-        }
-
     def get_api(self, API, marketplace_code):
         # assert issubclass(API, MWS) and type(marketplace) is Marketplace
         return API(
             region=marketplace_code,
             domain=self.region.endpoint,
-            **self._as_dictionary(),
+            access_key=self.access_key,
+            secret_key=self.secret_key,
+            account_id=self.seller_id,
         )
 
     def __str__(self):
