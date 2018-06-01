@@ -23,7 +23,7 @@ Install the package with ``pip``.
 
 ``$ pip install django-amazon-mws``
 
-Add the application to your ``INSTALLED_APPS``
+Add the application to your ``INSTALLED_APPS``.
 
 .. code:: python
 
@@ -31,6 +31,12 @@ Add the application to your ``INSTALLED_APPS``
        ...,
        'djmws',
    ]
+
+Add a ``DEFAULT_MARKETPLACE`` to your ``settings.py`` file.
+
+.. code:: python
+
+   DEFAULT_MARKETPLACE = 'UK'
 
 Development
 ===========

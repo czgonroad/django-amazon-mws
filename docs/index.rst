@@ -12,3 +12,4 @@ Welcome to django-amazon-mws's documentation!
 
    models.rst
    admin.rst
+   views.rst
